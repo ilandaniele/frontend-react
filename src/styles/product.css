@@ -1,0 +1,65 @@
+.product-card {
+  display: flex; /* Muestra la imagen y los detalles en línea */
+  align-items: flex-start; /* Alinea verticalmente los elementos */
+  border: 1px solid #ddd; /* Borde alrededor de la tarjeta del producto */
+  padding: 15px; /* Espaciado interno */
+  margin: 10px; /* Margen alrededor de cada producto */
+  position: relative; /* Necesario para posicionar el texto de disponibilidad */
+}
+
+.product-image {
+  width: 200px; /* Aumentar el tamaño de la imagen */
+  height: 200px; /* Aumentar la altura de la imagen */
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+  margin-right: 15px; /* Espacio entre la imagen y los detalles */
+}
+
+.product-details {
+  flex: 1; /* Ocupa el espacio restante */
+}
+
+.product-title {
+  font-size: 18px; /* Tamaño del título de la obra */
+  font-weight: bold; /* Negrita para el título */
+  margin-bottom: 5px; /* Espaciado debajo del título */
+}
+
+.sold-out {
+  color: red; /* Color para la leyenda de sold out */
+  font-weight: bold; /* Negrita para mayor énfasis */
+}
+
+.available {
+  color: green; /* Color para la leyenda de disponible */
+  font-weight: bold; /* Negrita para mayor énfasis */
+}
+
+.availability {
+  position: absolute; /* Posiciona el texto sobre la imagen */
+  bottom: 10px; /* Ajusta la posición desde el fondo */
+  left: 10px; /* Ajusta la posición desde la izquierda */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+  padding: 5px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s; /* Transición para el hover */
+}
+
+.availability:hover {
+  background-color: rgba(255, 255, 255, 1); /* Cambia el fondo al pasar el mouse */
+}
+
+.buy-button {
+  padding: 15px 20px; /* Aumentar el tamaño del botón */
+  background-color: #007BFF; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border-radius: 5px; /* Bordes redondeados del botón */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  transition: background-color 0.3s ease; /* Transición suave para el hover */
+  margin-left: auto; /* Empuja el botón hacia la derecha */
+  display: block; /* Hace que el botón ocupe toda la línea */
+}
+
+.buy-button:hover {
+  background-color: #0056b3; /* Color al pasar el mouse sobre el botón */
+}

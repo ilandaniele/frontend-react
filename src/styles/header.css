@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alineación vertical centrada */
+    padding: 10px 20px; /* Padding del header */
+    background-color: #f9f9f9; /* Color de fondo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .logo {
+        font-size: 24px; /* Tamaño del logo */
+        font-weight: bold;
+        color: #333; /* Color del texto del logo */
+        margin-right: 20px; /* Espaciado a la derecha del logo */
+      }
+      
+      .nav {
+        display: flex; /* Mantiene los enlaces en línea */
+        gap: 1px; /* Espacio entre los enlaces */
+        margin-right: auto; /* Empuja los enlaces a la izquierda */
+      }
+      
+      .nav a {
+        text-decoration: none;
+        color: #333; /* Color del texto */
+        font-size: 16px; /* Tamaño del texto de los enlaces */
+        padding: 10px 15px; /* Espaciado interno para el enlace */
+        border-radius: 5px; /* Bordes redondeados para un efecto más suave */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el hover */
+      }
+      
+      .nav a:hover {
+        background-color: rgba(173, 216, 230, 0.7); /* Celeste más opaco */
+        color: #007BFF; /* Color del texto al pasar el mouse */
+        border-radius: 10px;
+      }
+      
+      .login-button {
+        padding: 10px 15px; /* Espaciado interno del botón */
+        background-color: #007BFF; /* Color de fondo del botón */
+        color: white; /* Color del texto del botón */
+        border-radius: 5px; /* Bordes redondeados del botón */
+        transition: background-color 0.3s ease; /* Transición suave para el hover */
+        text-decoration: none;
+      }
+      
+      .login-button:hover {
+        background-color: #0056b3; /* Color al pasar el mouse sobre el botón */
+      }
+      
+  }
+  
+  
